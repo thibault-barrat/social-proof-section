@@ -1,0 +1,102 @@
+@import "fonts";
+@import "variables";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.heading {
+    background-image: url(../img/bg-pattern-top-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: $spartan;
+    text-align : center;
+    &__title {
+        color: $primary-magenta;
+        margin: 0;
+        padding: 80px 60px 0;
+        font-size: 26px;
+    }
+    &__chapo {
+        color: $neutral-dark-magenta;
+        margin: 0;
+        padding: 24px 16px 0;
+        font-size: $font-size;
+    }
+}
+
+.ratings {
+    padding:40px 25px 0;
+}
+
+.rating {
+    background-color: $neutral-light-magenta;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    font-family: $spartan;
+    margin-bottom: 16px;
+    text-align: center;
+    &__stars {
+        margin: 16px 0;
+    }
+    &__text {
+        font-size: $font-size;
+        color: $primary-magenta;
+        font-weight: 700;
+        margin: 0 0 19px 0;
+    }
+}
+
+.reviews {
+    padding: 50px 25px 100px;
+    background-image: url(../img/bg-pattern-bottom-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.review {
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: $primary-magenta;
+    padding: 40px 30px;
+    font-family: $spartan;
+    font-size: $font-size;
+    &__author {
+        display: flex;
+        flex-direction: row;
+    }
+    &__author-picture {
+        width: 40px;
+        height: auto;
+        border-radius: 20px;
+    }
+    &__author-description {
+        display: flex;
+        flex-direction: column;
+        padding-left: 22px;
+        justify-content: space-between;
+    }
+    &__author-name {
+        color: $white;
+        font-weight: 700;
+        margin: 0;
+    }
+    &__author-status {
+        color: $primary-pink;
+        margin: 0;
+    }
+    &__text {
+        color: $neutral-light-magenta;
+        line-height: 1.6;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        padding-top: 28px;
+    }
+}
