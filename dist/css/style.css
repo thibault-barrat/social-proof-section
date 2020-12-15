@@ -5,14 +5,31 @@
 
 body {
   margin: 0;
+  background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-mobile.svg);
+  background-size: contain, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../img/bg-pattern-bottom-desktop.svg);
+    background-size: auto;
+    background-position: bottom right;
+  }
 }
 
 .heading {
-  background-image: url(../img/bg-pattern-top-desktop.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
   font-family: "Spartan", sans-serif;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    background-image: url(../img/bg-pattern-top-desktop.svg);
+    text-align: left;
+    float: left;
+  }
 }
 
 .heading__title {
@@ -56,10 +73,6 @@ body {
 
 .reviews {
   padding: 50px 25px 100px;
-  background-image: url(../img/bg-pattern-bottom-mobile.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .review {
