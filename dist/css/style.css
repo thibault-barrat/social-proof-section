@@ -117,6 +117,10 @@ body {
 
 .rating__stars {
   margin: 16px 0;
+  background-image: url(../img/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 85px;
+  height: 21px;
 }
 
 @media screen and (min-width: 768px) {
