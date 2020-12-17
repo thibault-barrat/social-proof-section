@@ -4,6 +4,7 @@
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-mobile.svg);
   background-size: contain, contain;
